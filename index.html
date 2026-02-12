@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Happy Promise Day 💍❤️</title>
+<title>Happy Hug Day 🤗❤️</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -11,18 +11,19 @@
 body{
   margin:0;
   font-family:'Segoe UI',sans-serif;
-  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  background:linear-gradient(to top,#0f2027,#203a43,#2c5364);
   min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
   overflow:hidden;
+  color:white;
 }
 
 audio{display:none}
 
-/* 💍 PROMISE RAIN */
-.promise-rain span{
+/* 🤗 HUG RAIN */
+.hug-rain span{
   position:fixed;
   top:-60px;
   font-size:38px;
@@ -71,16 +72,16 @@ audio{display:none}
   align-items:center;
   padding:22px;
   text-align:center;
-  box-shadow:0 30px 80px rgba(0,0,0,.4);
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
 }
 
 .front{
-  background:linear-gradient(160deg,#fff0f5,#ffe4ec);
+  background:linear-gradient(160deg,#1c1c3c,#2c3e50);
   justify-content:center;
 }
 
 .back{
-  background:linear-gradient(160deg,#fff5f7,#f8bbd0);
+  background:linear-gradient(160deg,#16222a,#3a6073);
   transform:rotateY(180deg);
   justify-content:flex-start;
 }
@@ -95,7 +96,7 @@ audio{display:none}
   width:100%;
   max-width:240px;
   border-radius:24px;
-  box-shadow:0 18px 45px rgba(0,0,0,.35);
+  box-shadow:0 18px 45px rgba(0,0,0,.6);
   animation:softZoom 4s ease-in-out infinite;
 }
 
@@ -111,7 +112,8 @@ audio{display:none}
   margin-top:18px;
   font-size:17px;
   line-height:1.8;
-  color:#880e4f;
+  color:#ffd1dc;
+  text-shadow:0 0 8px rgba(255,105,180,.6);
   min-height:120px;
 }
 
@@ -121,10 +123,10 @@ button{
   border:none;
   border-radius:30px;
   font-size:17px;
-  background:linear-gradient(90deg,#ff4d6d,#ff758f);
+  background:linear-gradient(90deg,#ff416c,#ff4b2b);
   color:white;
   cursor:pointer;
-  box-shadow:0 10px 26px rgba(0,0,0,.3);
+  box-shadow:0 10px 26px rgba(0,0,0,.5);
   animation:pulse 1.6s infinite;
 }
 
@@ -152,38 +154,37 @@ button{
   <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
 </audio>
 
-<div class="promise-rain" id="rain"></div>
+<div class="hug-rain" id="rain"></div>
 
 <div class="card" id="card">
   <div class="inner">
 
     <!-- FRONT -->
     <div class="side front">
-      <h2>💍 Happy Promise Day ❤️</h2>
+      <h2>🌙 Happy Hug Day ❤️</h2>
       <p class="romantic">
-        "Har Pal Ke Rishte Ka Wada Hai Tumse,
-Apnapan Kuch Itna Jyada Hain Tumse,
-Kabhi Na Sochna Ki Bhul Jayenge Tumhe,
-Zindagi Bhar Ka Sath Denge Ye Wada Hai Tumse.... "
+        Dear love ❤️, A hug from you is my safest place in this world 💞  
+        Today I just want to wrap you in my arms and never let you go….  
+        Happy Hug Day! 🤗
       </p>
-      <button onclick="flipCard()">💌 Open My Promise</button>
+      <button onclick="flipCard()">🤗💞 Open My Hug</button>
     </div>
 
     <!-- BACK -->
     <div class="side back">
       <div class="gif">
-        <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3N2RxbGtsZ2E4ejZhaG5scDhsNjlkc2d3ODhvdWJ5MGhzenhvYWs2NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aZcmkpfwkJ1ML8QGUi/giphy.gif">
+        <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MWRzN3dkdTlodnR3bzZ5aWRqdWp1b3d1aG43b2w2ZXJqNmUya3Y5eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/f5B6rWqVWgNqugPoAL/giphy.gif">
       </div>
 
       <p class="romantic" id="typeText"></p>
-      <div class="final" id="finalMsg">FOREVER WITH YOU 💍❤️</div>
+      <div class="final" id="finalMsg">BIG HUG FOR YOU 🤗❤️</div>
     </div>
 
   </div>
 </div>
 
 <script>
-const emojis=["💍","❤️","💖","💕","🌹","✨"];
+const emojis=["🤗","❤️","💞","💕","🥰","✨"];
 setInterval(()=>{
   const s=document.createElement("span");
   s.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
@@ -197,15 +198,15 @@ function flipCard(){
   document.getElementById("card").classList.add("flip");
   document.getElementById("music").play();
   setTimeout(typeText,800);
-  setTimeout(showFinal,9000);
+  setTimeout(showFinal,7000);
 }
 
 const lines = [
-  "On this Promise Day, I promise I'll always be there to hold your hand, 🤝❤️",
-  "When sorrows come and miseries land... 💕",
-  "I promise to never leave you alone in this world... 🌍💖",
-  "HAPPY PROMISE DAY, sweetheart! 💕",,
-  ""
+  "Happy Hug Day My Heart… 🤗❤️",
+  "Whenever I hold you, I feel complete 💞",
+  "Your hug melts all my worries away 🥰",
+  "I promise my arms will always be your home… 💗",
+  "Sending you the warmest hug ever… 🤗❤️"
 ];
 
 let l=0,c=0;
@@ -228,12 +229,10 @@ function typeText(){
 
 function showFinal(){
   const f=document.getElementById("finalMsg");
-  f.innerHTML="I LOVE YOU FOREVER 💍❤️";
   f.style.opacity=1;
   f.style.transform="scale(1)";
 }
 </script>
-
 
 </body>
 </html>
